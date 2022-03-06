@@ -1,16 +1,60 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<title>Abstract Machine</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<html lang="en">
+    <head>
+        <meta name="keywords" content="compiler, grammar, parsing, parser" />
+        <meta name="description" content="compiler parsing tools" />
+        <meta content="text/html; charset=UTF-8;" http-equiv="content-type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+        <title>Abstract Machine</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+     <style>
+        #header {
+            text-align: center;
+        }
+        #codeseg {
+            padding-top: 1%;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        pre.prettyprint {
+            border: 1px solid #bbb;
+        }
+        li.L0,
+        li.L1,
+        li.L2,
+        li.L3,
+        li.L5,
+        li.L6,
+        li.L7,
+        li.L8 {
+            list-style-type: decimal !important;
+        }
+    </style>
 </head>
-<body style= "text-align:center;">
-<code><h2>Abstract Machine</h2>
-compilers, grammars & parsing tools.</code>
-<hr style="width:50%;"> 
-<pre><code class="cpp">
-void* temporarily() { return "r/w offline"; }
-</code></pre>
+<body>
+<div id="header">
+		<h1>Abstract Machine</h1>
+	<code><i style = "font-size: 16px">compilers, grammars & parsing tools.</i></code>
+	<hr style="width:70%; color:#bbb; background-color:#bbb; height:1px;" />
+</div>
+
+<div id="codeseg">
+<pre class="prettyprint lang-c linenums:">
+// Date, Time: <span id="datetime"></span><script>var dt = new Date(); document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+
+#include &lt;current_status&gt;
+
+void* temporarily() {
+    return "r/w offline.";
+}
+
+void main(void) {
+    char *status;
+    status = temporarily();
+}</pre>
+</div>
 </body>
 </html>
